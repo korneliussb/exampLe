@@ -69,6 +69,6 @@ class User extends Authenticatable
 
     public function myFoobar()
     {
-        return "foobar";
+        return "foobar"; //foo
     }
 }
