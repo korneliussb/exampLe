@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Foobar; //model
 use Illuminate\Http\Request;
 
 class FoobarController extends Controller
@@ -11,9 +12,9 @@ class FoobarController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Foobar $foobar)
     {
-        //
+        $foobar->name();
     }
 
     /**
