@@ -12,7 +12,12 @@ class FoobarController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Foobar $foobar)
+    public function index(Request $request)
+    {
+        $request->input('foo');
+    }
+
+    public function index2(Foobar $foobar)
     {
         $foobar->name();
     }
