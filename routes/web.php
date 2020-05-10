@@ -16,5 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
+    // $name = 'foo';
+    $name = request('name');
+
     return 'The About Page';
 });

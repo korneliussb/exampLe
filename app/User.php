@@ -71,4 +71,12 @@ class User extends Authenticatable
     {
         return "foobar";
     }
+
+    public function foobar($change)
+    {
+        return $change * 7;
+        // return $change * 7;
+        // return $change * 7;
+        // return $change * 7;
+    }
 }

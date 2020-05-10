@@ -14,11 +14,11 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $response = $this->get('/');
+        $response = $this->get('/about?name=foobar');
 
-        $foo = 'bar';
+        // $foo = 'bar';
 
-        $response->assertStatus(200);
+        // $response->assertStatus(200);
     }
 
     public function test_it_loads_the_about_page()
