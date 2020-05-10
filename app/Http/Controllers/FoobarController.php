@@ -76,8 +76,7 @@ class FoobarController extends Controller
     {
         $this->authorize('update', $id);
 
-        request()->update(request()->validate(['body' => 'required|spamfree']));
-        //  validate(['body' => 'required|spamfree']);
+        $validated = request()->validate(['body' => 'required|spamfree']);
 
         $id->update(request(['body']));
     }
