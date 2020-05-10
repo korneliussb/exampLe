@@ -79,7 +79,7 @@ class FoobarController extends Controller
         request()->update(request()->validate(['body' => 'required|spamfree']));
         //  validate(['body' => 'required|spamfree']);
 
-        // $id->update(request(['body']));
+        $id->update(request(['body']));
     }
 
     /**
